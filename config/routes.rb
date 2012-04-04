@@ -1,4 +1,14 @@
 VcesteTuit::Application.routes.draw do
+
+
+  ActiveAdmin.routes(self)
+  
+  devise_for :users, :controllers => { :sessions => "users/sessions" }
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
+  resources :timelines
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

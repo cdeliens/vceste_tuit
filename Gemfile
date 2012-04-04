@@ -13,6 +13,8 @@ gem 'json'
 # in production environments by default.
 group :development do
   gem 'pry'
+  gem 'rspec-rails'
+  gem 'capybara'
 end
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
@@ -23,6 +25,9 @@ end
 gem 'jquery-rails'
 gem 'twitter'
 gem 'activeadmin'
+gem 'gon'
+gem 'haml-rails'
+gem 'heroku'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
