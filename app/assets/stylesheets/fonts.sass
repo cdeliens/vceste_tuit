@@ -1,3 +1,4 @@
+@import "colors"
 @font-face
   font-family: 'SteelfishRegular'
   src: url('steelfish-webfont.eot')
@@ -5,7 +6,10 @@
   font-weight: normal
   font-style: normal
 
-.font
+@mixin font_builder($font: 'SteelfishRegular', $size: 14px, $weight: normal, $transform: none, $color: $black)
   font-family: 'SteelfishRegular'
-  font-size: 120px
-  color: black
+  font-size: $size
+  font-weight: $weight
+  text-transform: $transform
+  color: $color
+
