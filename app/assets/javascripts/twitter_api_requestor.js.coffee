@@ -21,7 +21,7 @@ jQuery ->
     $(element).cycle
       fx:     scroll
       easing: 'easeOutBounce'
-      delay:  -2000
+      delay:  -3000
 
   handle_this = (tweets) ->
     for tweet in tweets
@@ -51,5 +51,5 @@ jQuery ->
   
   setInterval (->
     get_tweets()
-  ), 180000
+  ), 60000
 
