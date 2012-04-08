@@ -1,5 +1,10 @@
 class TimelinesController < ApplicationController
-	def show
+  def index
+    @timelines = Timeline.all
+  end
+
+
+  def show
     @timeline = Timeline.find_by_id(params[:id])
     gon.hashtag = @timeline.hashtag
   end

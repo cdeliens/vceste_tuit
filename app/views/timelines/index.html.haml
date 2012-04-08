@@ -1,0 +1,5 @@
+%body
+  %ul
+    - @timelines.each do |timeline|
+      %li 
+        =link_to timeline.hashtag, timeline
