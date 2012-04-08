@@ -1,0 +1,18 @@
+o: ActiveSupport::Cache::Entry	:@expires_in0:@created_atf1333569272.753512:@compressedF:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%11400e1f753361d381efb4d9e756e248I"logical_path;
+FI"steelfish-webfont.woff;
+TI"pathname;
+FI"2$root/app/assets/fonts/steelfish-webfont.woff;
+FI"content_type;
+FI"application/octet-stream;
+FI"
+mtime;
+FI"2012-04-01T21:51:10-06:00;
+FI"length;
+FI"
+18944;
+FI"digest;
+F"%d783491400818eb618da475afcb82491I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

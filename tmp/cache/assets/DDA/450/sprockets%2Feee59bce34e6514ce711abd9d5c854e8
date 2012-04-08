@@ -1,0 +1,77 @@
+o: ActiveSupport::Cache::Entry	:@expires_in0:@created_atf1333852052.474318:@compressedF:@value{	I"length:EFiæ	I"digest;
+F"%041a3ba44856ef584865e3e53960d084I"source;
+FI"æ	(function() {
+
+  jQuery(function() {
+    var SEARCH_URL, append_to_feeder, append_to_owner_list, create_html, create_image_html, cycle_this, get_tweets, handle_this, pop_up_author;
+    SEARCH_URL = "http://search.twitter.com/search.json?callback=?";
+    create_image_html = function(entitie) {
+      var image, url;
+      url = entitie[0].media_url;
+      return image = "<img scr='http://placekitten.com/50/50' width='50px' height='50px'/>";
+    };
+    create_html = function(tweet) {
+      var close_tweet, media, open_tweet, tweet_element, tweet_text;
+      open_tweet = "<div class='tweet'>";
+      close_tweet = "</p></div>";
+      tweet_text = "<p>" + tweet.text;
+      if (tweet.entities.media !== void 0) {
+        console.log(tweet.entities.media);
+        media = tweet.entities.media;
+        tweet_text += create_image_html(media);
+      }
+      return tweet_element = open_tweet + tweet_text + close_tweet;
+    };
+    pop_up_author = function(tweet) {
+      var hashtag, owner_element;
+      hashtag = "<div>" + gon.hashtag + "</div>";
+      return owner_element = "<div id='owner'><img src='http://placekitten.com/50/50'/><span>@" + tweet.from_user + "</span><span>" + hashtag + "</span></div>";
+    };
+    append_to_feeder = function(element) {
+      return $("#tweets_feeder").append(element);
+    };
+    append_to_owner_list = function(element) {
+      return $("#owner_list").append(element);
+    };
+    cycle_this = function(element, scroll) {
+      return $(element).cycle({
+        fx: scroll,
+        easing: 'easeOutBounce',
+        delay: -3000
+      });
+    };
+    handle_this = function(tweets) {
+      var tweet, _i, _len, _results;
+      _results = [];
+      for (_i = 0, _len = tweets.length; _i < _len; _i++) {
+        tweet = tweets[_i];
+        _results.push((function(tweet) {
+          append_to_feeder(create_html(tweet));
+          return append_to_owner_list(pop_up_author(tweet));
+        })(tweet));
+      }
+      return _results;
+    };
+    get_tweets = function() {
+      $("#tweets_feeder").fadeOut("fast");
+      $("#tweets_feeder").fadeIn("fast");
+      return $.getJSON("" + SEARCH_URL, {
+        q: "" + gon.hashtag,
+        include_entities: true
+      }, function(tweets) {
+        console.log(tweets);
+        handle_this(tweets.results);
+        cycle_this("#tweets_feeder", 'scrollDown');
+        return cycle_this("#owner_list", 'scrollDown');
+      });
+    };
+    get_tweets();
+    return setInterval((function() {
+      return get_tweets();
+    }), 180000);
+  });
+
+}).call(this);
+;
+FI"_version;
+F"%4df76411e8a36c1d371652c86ff3761e

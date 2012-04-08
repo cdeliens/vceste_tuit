@@ -1,0 +1,3 @@
+o: ActiveSupport::Cache::Entry	:@value{I"
+class:EFI"StaticAsset;FI"id;F"%6f88257e199f555a9428eb835e41cec9I"logical_path;FI"6active_admin/datepicker/datepicker-input-icon.png;TI"pathname;F"‡/Users/cdeliens/.rvm/gems/ruby-1.9.3-p0@tuit/gems/activeadmin-0.4.2/app/assets/images/active_admin/datepicker/datepicker-input-icon.pngI"content_type;FI"image/png;FI"
+mtime;FI"2012-03-20T08:38:59-06:00;FI"length;FI"	1535;FI"digest;F"%de81f5ac6865f0b215b877c6ade6b594I"_version;F"%46dde6621c301f4928e3b34efee9e3b5:@expires_in0:@compressedF:@created_atf1332311172.543703
