@@ -1,9 +1,8 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@created_atf1333569205.968201:@compressedF:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1333856597.2638552:@value{I"
 class:EFI"StaticAsset;
 FI"id;
-F"%f67a6f1865515e8609a6a758a8a2832aI"logical_path;
-FI"active_admin/orderable.png;
-TI"pathname;
+F"%ef0c5dce8750a1dd4b529775473852b8I"logical_path;
+F"active_admin/orderable.pngI"pathname;
 F"u/Users/cdeliens/.rvm/gems/ruby-1.9.3-p0@tuit/gems/activeadmin-0.4.3/app/assets/images/active_admin/orderable.pngI"content_type;
 FI"image/png;
 FI"
@@ -12,5 +11,5 @@ FI"2012-04-04T10:22:21-06:00;
 FI"length;
 FI"220;
 FI"digest;
-F"%133c459e13623657f81cb24b674d3ffbI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5
+F"%312cf8ad195f38825b0fb3d7447aef58I"_version;
+F"%1c9609bc58b1e77c196de29021583379

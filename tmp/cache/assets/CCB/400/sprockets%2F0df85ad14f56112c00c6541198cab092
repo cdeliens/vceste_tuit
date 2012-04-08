@@ -1,11 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@value{	I"length:EFi–I"digest;F"%df225786686c55a60e152a0751a4f706I"source;FI"–(function() {
-
-  jQuery(function() {
-    return $("#tweets_feeder").cycle({
-      fx: "scrollRight",
-      delay: -1000
-    });
-  });
-
-}).call(this);
-;FI"_version;F"%611be8531b7849b79837c303e003ea88:@expires_in0:@compressedF:@created_atf1333518267.297183

@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1333856566.934693:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%087aeab654bd7f0dc8abcbc1e6a7e990I"logical_path;
+F"steelfish.ttfI"pathname;
+FI")$root/app/assets/fonts/steelfish.ttf;
+FI"content_type;
+FI"application/octet-stream;
+FI"
+mtime;
+FI"2012-04-01T21:50:58-06:00;
+FI"length;
+FI"
+50092;
+FI"digest;
+F"%6de6143ce43e6a282fcb80fa999faaedI"_version;
+F"%1c9609bc58b1e77c196de29021583379

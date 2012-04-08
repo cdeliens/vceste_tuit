@@ -1,0 +1,16 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1333856566.771353:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%2515d2d795dc0848f0e4738a24ec4b37I"logical_path;
+F"generator_config.txtI"pathname;
+FI"0$root/app/assets/fonts/generator_config.txt;
+FI"content_type;
+FI"text/plain;
+FI"
+mtime;
+FI"2012-04-05T12:44:08-06:00;
+FI"length;
+FI"512;
+FI"digest;
+F"%902aab665936135030f8e7cbad97c58dI"_version;
+F"%1c9609bc58b1e77c196de29021583379

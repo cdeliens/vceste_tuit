@@ -1,6 +1,15 @@
-o: ActiveSupport::Cache::Entry	:@value{I"
-class:EFI"BundledAsset;FI"id;F"%54a408196aed242a17b806437d9ccd9eI"logical_path;F"jquery_ujs.jsI"pathname;F"r/Users/cdeliens/.rvm/gems/ruby-1.9.3-p0@tuit/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.jsI"content_type;FI"application/javascript;FI"
-mtime;FI"2012-03-20T08:38:48-06:00;FI"	body;FI"ç;(function($, undefined) {
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1333856567.1460679:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%96448f266b495bd65fb193d7175ab2c9I"logical_path;
+F"jquery_ujs.jsI"pathname;
+F"r/Users/cdeliens/.rvm/gems/ruby-1.9.3-p0@tuit/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.jsI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-03-20T08:38:48-06:00;
+FI"	body;
+FI"ç;(function($, undefined) {
 
 /**
  * Unobtrusive scripting adapter for jQuery
@@ -373,6 +382,14 @@ mtime;FI"2012-03-20T08:38:48-06:00;FI"	body;FI"ç;(function($, undefined)
   });
 
 })( jQuery );
-;FI"asset_paths;F["r/Users/cdeliens/.rvm/gems/ruby-1.9.3-p0@tuit/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.jsI"dependency_paths;F[{I"	path;F"r/Users/cdeliens/.rvm/gems/ruby-1.9.3-p0@tuit/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.jsI"
-mtime;FIu:	TimeŽ
-€   ›:@_zoneI"CST;T:offsetiþ «I"hexdigest;F"%2caafa0c2617f9985c1a0b07ebaefadfI"_version;F"%46dde6621c301f4928e3b34efee9e3b5:@expires_in0:@compressedF:@created_atf1332310080.5714262
+;
+FI"asset_paths;
+F["r/Users/cdeliens/.rvm/gems/ruby-1.9.3-p0@tuit/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.jsI"dependency_paths;
+F[{I"	path;
+F"r/Users/cdeliens/.rvm/gems/ruby-1.9.3-p0@tuit/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.jsI"
+mtime;
+FIu:	TimeŽ
+€   ›:@_zoneI"CST;
+T:offsetiþ «I"hexdigest;
+F"%bb8b5b2f69bac3290543c2deb24085c9I"_version;
+F"%1c9609bc58b1e77c196de29021583379

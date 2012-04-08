@@ -1,0 +1,15 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1333856597.078516:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%cb9952aa80a4ed72c661d0a5f6e13d6aI"logical_path;
+F"&active_admin/admin_notes_icon.pngI"pathname;
+F"|/Users/cdeliens/.rvm/gems/ruby-1.9.3-p0@tuit/gems/activeadmin-0.4.3/app/assets/images/active_admin/admin_notes_icon.pngI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2012-04-04T10:22:21-06:00;
+FI"length;
+FI"716;
+FI"digest;
+F"%d3076b67b8655afc5cf14bf244c34db5I"_version;
+F"%1c9609bc58b1e77c196de29021583379
