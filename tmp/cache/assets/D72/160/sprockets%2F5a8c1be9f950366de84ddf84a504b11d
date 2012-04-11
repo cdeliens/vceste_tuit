@@ -1,15 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1333856597.088202:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%4be9203f75252755cd0d86935d579ecfI"logical_path;
-F"6active_admin/datepicker/datepicker-input-icon.pngI"pathname;
-F"‡/Users/cdeliens/.rvm/gems/ruby-1.9.3-p0@tuit/gems/activeadmin-0.4.3/app/assets/images/active_admin/datepicker/datepicker-input-icon.pngI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-04-04T10:22:21-06:00;
-FI"length;
-FI"	1535;
-FI"digest;
-F"%e48beac5b8da2344985c5d2afe6159ddI"_version;
-F"%1c9609bc58b1e77c196de29021583379

@@ -1,15 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1333856597.130157:@value{I"
-class:EFI"StaticAsset;
-FI"id;
-F"%101bffd351b75a01fd4be30c6824b851I"logical_path;
-F"2active_admin/datepicker/datepicker-nipple.pngI"pathname;
-F"ƒ/Users/cdeliens/.rvm/gems/ruby-1.9.3-p0@tuit/gems/activeadmin-0.4.3/app/assets/images/active_admin/datepicker/datepicker-nipple.pngI"content_type;
-FI"image/png;
-FI"
-mtime;
-FI"2012-04-04T10:22:21-06:00;
-FI"length;
-FI"	1224;
-FI"digest;
-F"%5d9a7fdc4a5ca1c5903fa0715a5ca080I"_version;
-F"%1c9609bc58b1e77c196de29021583379
