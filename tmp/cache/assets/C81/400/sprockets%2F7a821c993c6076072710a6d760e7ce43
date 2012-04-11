@@ -1,0 +1,103 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1334185533.077157:@value{	I"length:EFi
+I"digest;
+F"%56f72fb1b582fdd0ef174674661b3a00I"source;
+FI"
+@charset "US-ASCII";
+@font-face {
+  font-family: "SteelfishRegular";
+  src: url("steelfish-webfont.eot");
+  src: local("☺"), url("steelfish-webfont.woff") format("woff"), url("steelfish-webfont.ttf") format("truetype"), url("steelfish-webfont.svg#webfontqOlXtNFb") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 4, /Users/cdeliens/development/vceste_tuit/app/assets/stylesheets/timeline.css.sass */
+body.green {
+  background: #a7ff2a;
+}
+
+/* line 6, /Users/cdeliens/development/vceste_tuit/app/assets/stylesheets/timeline.css.sass */
+body.blue {
+  background: #0ef7ff;
+}
+
+/* line 8, /Users/cdeliens/development/vceste_tuit/app/assets/stylesheets/timeline.css.sass */
+body.pink {
+  background: #f42c6e;
+}
+
+/* line 10, /Users/cdeliens/development/vceste_tuit/app/assets/stylesheets/timeline.css.sass */
+body.white {
+  background: white;
+}
+
+/* line 12, /Users/cdeliens/development/vceste_tuit/app/assets/stylesheets/timeline.css.sass */
+#tweets_feeder {
+  margin: 0 auto;
+}
+
+/* line 15, /Users/cdeliens/development/vceste_tuit/app/assets/stylesheets/timeline.css.sass */
+.tweet {
+  position: relative;
+  width: 960px;
+  display: inline;
+  font-family: "SteelfishRegular";
+  font-size: 100px;
+  font-weight: normal;
+  text-transform: none;
+  color: #333333;
+  padding: 50px;
+  line-height: 120px;
+  height: 1024px;
+}
+/* line 24, /Users/cdeliens/development/vceste_tuit/app/assets/stylesheets/timeline.css.sass */
+.tweet img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* line 30, /Users/cdeliens/development/vceste_tuit/app/assets/stylesheets/timeline.css.sass */
+#entitie {
+  width: 640 px;
+  height: 480px;
+  position: absolute;
+  top: 0px;
+  z-index: 100;
+}
+
+/* line 38, /Users/cdeliens/development/vceste_tuit/app/assets/stylesheets/timeline.css.sass */
+#owner_list {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: inline-block;
+  width: 100% !important;
+}
+/* line 45, /Users/cdeliens/development/vceste_tuit/app/assets/stylesheets/timeline.css.sass */
+#owner_list #owner {
+  height: 50px;
+  float: left;
+  font-family: "SteelfishRegular";
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: none;
+  color: #333333;
+}
+/* line 50, /Users/cdeliens/development/vceste_tuit/app/assets/stylesheets/timeline.css.sass */
+#owner_list #owner span {
+  float: left;
+  line-height: 50px;
+  margin-right: 10px;
+}
+/* line 55, /Users/cdeliens/development/vceste_tuit/app/assets/stylesheets/timeline.css.sass */
+#owner_list #owner img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+;
+TI"_version;
+F"%6539b8b215e403cd83838f32e23ea10d

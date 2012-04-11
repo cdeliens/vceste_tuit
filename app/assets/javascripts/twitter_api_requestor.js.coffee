@@ -5,10 +5,10 @@ jQuery ->
     url = entitie[0].media_url
     image = "<img scr='http://placekitten.com/50/50' width='50px' height='50px'/>"
 
-  create_html = (tweet) ->
-    open_tweet = "<div class='tweet'>"
-    close_tweet = "</p></div>"
-    tweet_text = "<p>#{tweet.text}"
+  create_html = (tweet, x, y) ->
+    open_tweet = "<div id='bored' class='step slide' data-x='#{x}' data-y='#{y}'>"
+    close_tweet = "</q></div>"
+    tweet_text = "<q>#{tweet.text}"
     unless tweet.entities.media is undefined
       console.log tweet.entities.media
       media = tweet.entities.media
@@ -20,7 +20,7 @@ jQuery ->
     owner_element = "<div id='owner'><img src='http://placekitten.com/50/50'/><span>@#{tweet.from_user}</span><span>#{hashtag}</span></div>"
 
   append_to_feeder = (element) ->
-    $("#tweets_feeder").append(element)
+    $("#impress").append(element)
 
   append_to_owner_list = (element) ->
     $("#owner_list").append(element)
@@ -32,27 +32,32 @@ jQuery ->
       delay:  -3000
 
   handle_this = (tweets) ->
+    x = -1000
+    y = -1500
     for tweet in tweets
       do (tweet) ->
-        append_to_feeder create_html(tweet)
-        append_to_owner_list pop_up_author(tweet)
+        append_to_feeder create_html(tweet, x, y)
+        x += -1000
 
- 
+  
   get_tweets = ->
     $("#tweets_feeder").fadeOut("fast")
     $("#tweets_feeder").fadeIn("fast")
-    $.getJSON "#{SEARCH_URL}",
+    $.getJSON("#{SEARCH_URL}",
       q: "#{gon.hashtag}"
       include_entities: true, 
       (tweets) ->
         console.log tweets
         handle_this tweets.results
-        cycle_this("#tweets_feeder", 'scrollDown')
-        cycle_this("#owner_list", 'scrollDown')
+    ).success(->
+      impress().init()
+      setInterval(impress().next(), 100)
+    ).error(->
+      alert "error"
+    )
+        
   
   get_tweets()
   
-  setInterval (->
-    get_tweets()
-  ), 180000
+  
 

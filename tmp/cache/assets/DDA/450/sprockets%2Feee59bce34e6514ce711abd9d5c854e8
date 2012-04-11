@@ -1,0 +1,81 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1334187432.245151:@value{	I"length:EFi!
+I"digest;
+F"%03515a61da3ebfb067d40d181df075c5I"source;
+FI"!
+(function() {
+
+  jQuery(function() {
+    var SEARCH_URL, append_to_feeder, append_to_owner_list, create_html, create_image_html, cycle_this, get_tweets, handle_this, pop_up_author;
+    SEARCH_URL = "http://search.twitter.com/search.json?callback=?";
+    create_image_html = function(entitie) {
+      var image, url;
+      url = entitie[0].media_url;
+      return image = "<img scr='http://placekitten.com/50/50' width='50px' height='50px'/>";
+    };
+    create_html = function(tweet, x, y) {
+      var close_tweet, media, open_tweet, tweet_element, tweet_text;
+      open_tweet = "<div id='bored' class='step slide' data-x='" + x + "' data-y='" + y + "'>";
+      close_tweet = "</q></div>";
+      tweet_text = "<q>" + tweet.text;
+      if (tweet.entities.media !== void 0) {
+        console.log(tweet.entities.media);
+        media = tweet.entities.media;
+        tweet_text += create_image_html(media);
+      }
+      return tweet_element = open_tweet + tweet_text + close_tweet;
+    };
+    pop_up_author = function(tweet) {
+      var hashtag, owner_element;
+      hashtag = "<div>" + gon.hashtag + "</div>";
+      return owner_element = "<div id='owner'><img src='http://placekitten.com/50/50'/><span>@" + tweet.from_user + "</span><span>" + hashtag + "</span></div>";
+    };
+    append_to_feeder = function(element) {
+      return $("#impress").append(element);
+    };
+    append_to_owner_list = function(element) {
+      return $("#owner_list").append(element);
+    };
+    cycle_this = function(element, scroll) {
+      return $(element).cycle({
+        fx: scroll,
+        easing: 'easeOutBounce',
+        delay: -3000
+      });
+    };
+    handle_this = function(tweets) {
+      var tweet, x, y, _i, _len, _results;
+      x = -1000;
+      y = -1500;
+      _results = [];
+      for (_i = 0, _len = tweets.length; _i < _len; _i++) {
+        tweet = tweets[_i];
+        _results.push((function(tweet) {
+          append_to_feeder(create_html(tweet, x, y));
+          return x += -1000;
+        })(tweet));
+      }
+      return _results;
+    };
+    get_tweets = function() {
+      $("#tweets_feeder").fadeOut("fast");
+      $("#tweets_feeder").fadeIn("fast");
+      return $.getJSON("" + SEARCH_URL, {
+        q: "" + gon.hashtag,
+        include_entities: true
+      }, function(tweets) {
+        console.log(tweets);
+        return handle_this(tweets.results);
+      }).success(function() {
+        impress().init();
+        return setInterval(impress().next(), 100);
+      }).error(function() {
+        return alert("error");
+      });
+    };
+    return get_tweets();
+  });
+
+}).call(this);
+;
+FI"_version;
+F"%25ad2f4f73df615f63e3c5b082faab9c
