@@ -9,4 +9,5 @@
 //= require jquery.cycle.all.js
 //= require jquery.easing-1.3.js
 //= require impress.js
+//= require instagram.js
 //= require_tree .
