@@ -1,13 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1334206809.419699:@value{	I"length:EFiFI"digest;
-F"%a808fbbfe030d5d0b84b07dfb2c624a1I"source;
-FI"F@charset "UTF-8";
-@font-face {
-  font-family: "SteelfishRegular";
-  src: url("steelfish-webfont.eot");
-  src: local("☺"), url("steelfish-webfont.woff") format("woff"), url("steelfish-webfont.ttf") format("truetype"), url("steelfish-webfont.svg#webfontqOlXtNFb") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-;
-TI"_version;
-F"%414551edd21aadb6398368472873be82
