@@ -79,11 +79,8 @@ jQuery ->
     )
 
   init = ->
-    clear_canvas()
     get_tweets()
   
-  refresh_dom = ->
-
   unless gon.where == "home"
     append_to_hashtag(get_hashtag())
     init()
