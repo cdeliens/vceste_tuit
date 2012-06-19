@@ -58,3 +58,42 @@ body.white
       height: 50px
       margin-right: 10px
 
+#hashtag
+  position: absolute
+  bottom: 10px
+  left: 10px
+  @include font_builder($size: 50px)
+.step
+  position: relative
+  width: 900px
+  padding: 40px
+  margin: 20px auto
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -ms-box-sizing: border-box
+  -o-box-sizing: border-box
+  box-sizing: border-box
+  @include font_builder($size: 80px)
+  line-height: 1.5
+  z-index: 1
+
+  #owner
+    position: absolute
+    top: -10px
+    left: -70px
+    height: 100px
+    line-height: 0
+    @include rotation(-25deg)
+    @include font_builder($size: 55px, $color: #FF2C59)
+    img
+      margin-right: 10px
+    span
+      line-height: 1.5
+  #tweet_media
+    @include rotation(15deg)
+    position: absolute
+    bottom: -100px
+    right: -250px
+    z-index: -1
+
+
