@@ -1,5 +1,37 @@
-%body
-  %ul
-    - @timelines.each do |timeline|
-      %li 
-        =link_to timeline.hashtag, timeline
+= stylesheet_link_tag  "home"
+
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      = link_to("vceste-tuit", "/", class: "brand")
+.container
+  .hero-unit
+    %h1 Is she dead, yes or no?
+    %p 
+      Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+    %p
+      = link_to "Hold on to your butts", "", class: "btn btn-primary btn-large"
+  .row
+    .span4
+      %h2 Available Timelines
+      %p
+      - times = Timeline.all
+      - times.each do |t|
+        =link_to( t.hashtag, t)
+
+      %p
+        
+    .span4
+      %h2 Cuadro 2
+      %p
+        Estas es una hablada
+    .span4
+      %h2 Cuadro 3
+      %p
+        Estas es una hablada
+
+  %hr
+  .footer
+    .p
+      © Deliens Dev
+

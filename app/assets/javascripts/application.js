@@ -6,6 +6,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require jquery.cycle.all.js
 //= require jquery.easing-1.3.js
 //= require impress.js

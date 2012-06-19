@@ -13,7 +13,7 @@ group :production, :staging do
 end
 
 group :development, :test do
-  gem "pg"
+  gem "sqlite3"
 end
 
 # Gems used only for assets and not required
@@ -25,10 +25,13 @@ group :development do
 end
 group :assets do
   gem 'sass-rails'
+  gem 'less-rails'
   gem 'coffee-rails'
   gem 'uglifier'
 end
 
+gem 'less-rails-bootstrap'
+gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
 gem 'twitter'
 gem 'activeadmin'

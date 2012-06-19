@@ -1,6 +1,8 @@
 class TimelinesController < ApplicationController
   def index
     @timelines = Timeline.all
+    gon.where = "home"
+    render :layout => false
   end
 
 

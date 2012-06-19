@@ -84,10 +84,10 @@ jQuery ->
   
   refresh_dom = ->
 
-  
-  append_to_hashtag(get_hashtag())
-  init()
-  setInterval("window.location.reload()", 120000)
+  unless gon.where == "home"
+    append_to_hashtag(get_hashtag())
+    init()
+    setInterval("window.location.reload()", 120000)
 
   
   
