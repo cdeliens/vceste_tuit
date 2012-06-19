@@ -60,9 +60,9 @@ body.white
 
 #hashtag
   position: absolute
-  bottom: 10px
+  bottom: 20px
   left: 10px
-  @include font_builder($size: 50px)
+  @include font_builder($size: 50px, $weight: bold)
 .step
   position: relative
   width: 900px
@@ -73,18 +73,18 @@ body.white
   -ms-box-sizing: border-box
   -o-box-sizing: border-box
   box-sizing: border-box
-  @include font_builder($size: 80px)
-  line-height: 1.5
+  @include font_builder($size: 60px, $weight: bold)
+  line-height: 60px
   z-index: 1
 
   #owner
     position: absolute
-    top: -10px
-    left: -70px
+    top: -40px
+    left: -100px
     height: 100px
     line-height: 0
     @include rotation(-25deg)
-    @include font_builder($size: 55px, $color: #FF2C59)
+    @include font_builder($size: 55px, $color: #FF2C59, $weight: bold)
     img
       margin-right: 10px
     span
