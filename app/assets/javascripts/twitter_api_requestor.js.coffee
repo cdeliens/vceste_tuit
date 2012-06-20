@@ -55,7 +55,7 @@ jQuery ->
         y += 1000
         rotate_x = randomFromInterval(0, 360)
         rotate_y = randomFromInterval(0, 360)
-        scale = randomFromInterval(0, 10)
+        scale = randomFromInterval(1, 10)
         z = randomFromInterval(-1300, 1300)
 
 
