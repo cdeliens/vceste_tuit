@@ -44,10 +44,10 @@ jQuery ->
   handle_this = (tweets) ->
     x = 0
     y = 0
-    z = 0
-    rotate_x = 0
-    rotate_y = 0
-    scale = 0
+    z = 200
+    rotate_x = 1
+    rotate_y = 1
+    scale = 1
     for tweet in tweets
       do (tweet) ->
         append_to_feeder create_html(tweet, x, y, z, rotate_x, rotate_y, scale)
@@ -56,7 +56,7 @@ jQuery ->
         rotate_x = randomFromInterval(0, 360)
         rotate_y = randomFromInterval(0, 360)
         scale = randomFromInterval(0, 10)
-        z += randomFromInterval(-1300, 1300)
+        z = randomFromInterval(-1300, 1300)
 
 
   clear_canvas = (element) ->
