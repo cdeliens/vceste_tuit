@@ -4,8 +4,8 @@ jQuery ->
     url = entitie[0].media_url
     image = "<div id='tweet_media'><img src='#{url}'/></div>"
 
-  create_html = (tweet, x, y, z, rotate, scale) ->
-    open_tweet = "<div class='step' data-x='#{x}' data-y='#{y}' data-z='#{z}' data-rotate='#{rotate}'>"
+  create_html = (tweet, x, y, z, rotate_x, rotate_y, scale) ->
+    open_tweet = "<div class='step' data-x='#{x}' data-y='#{y}' data-z='#{z}' data-rotate-x='#{rotate_x}' data-rotate-y='#{rotate_y}', data-scale='#{scale}'>"
     close_tweet = "</q></div>"
     tweet_text = "<q>#{tweet.text}"
     author = pop_up_author tweet
@@ -45,16 +45,18 @@ jQuery ->
     x = 0
     y = 0
     z = 0
-    rotate = 0
-    scale = 1
+    rotate_x = 0
+    rotate_y = 0
+    scale = 0
     for tweet in tweets
       do (tweet) ->
-        append_to_feeder create_html(tweet, x, y, z, rotate, scale)
+        append_to_feeder create_html(tweet, x, y, z, rotate_x, rotate_y, scale)
         x += 1000
-        y = randomFromInterval(1000, 5000)
-        rotate = randomFromInterval(0, 360)
-        scale += 1
-        z += randomFromInterval(-300, 300)
+        y += 2000
+        rotate_x = randomFromInterval(0, 360)
+        rotate_y = randomFromInterval(0, 360)
+        scale = randomFromInterval(0, 10)
+        z += randomFromInterval(-1300, 1300)
 
 
   clear_canvas = (element) ->
