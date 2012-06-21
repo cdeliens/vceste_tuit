@@ -7,7 +7,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require jquery.maskedinput-1.3
 //= require impress.js
 //= require instagram.js
 //= require home.js

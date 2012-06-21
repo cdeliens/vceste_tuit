@@ -84,8 +84,8 @@ jQuery ->
     get_tweets()
   
   unless gon.where == "home"
-    append_to_hashtag(get_hashtag())
-    init()
+    # append_to_hashtag(get_hashtag())
+    # init()
     setInterval("window.location.reload()", 120000)
 
   
