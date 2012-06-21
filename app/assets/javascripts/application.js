@@ -7,8 +7,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require jquery.cycle.all.js
-//= require jquery.easing-1.3.js
+//= require jquery.maskedinput-1.3
 //= require impress.js
 //= require instagram.js
+//= require home.js
 //= require_tree .
