@@ -12,7 +12,6 @@ class TimelinesController < ApplicationController
   	    Timeline.create(:hashtag => "##{params[:id]}") 
   	  end
   	end
-
   	if Timeline.exists?(hashtag: "##{params[:id]}")
       @timeline = Timeline.find_by_hashtag("##{params[:id]}")
     else
