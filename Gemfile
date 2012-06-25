@@ -30,6 +30,7 @@ group :assets do
   gem 'uglifier'
 end
 
+gem 'google-analytics-rails'
 gem 'less-rails-bootstrap'
 gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'

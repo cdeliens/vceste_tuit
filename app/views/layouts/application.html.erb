@@ -3,6 +3,7 @@
 <head>
   <title>Social Scream!</title>
   <%= include_gon %>
+  <%= analytics_init if Rails.env.production? %>
   
   
   <%= csrf_meta_tags %>
